@@ -4,7 +4,7 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Alpavantage App",
+  title: "Alphavantage App",
   description: "A stock search tool using the Alpavantage API",
   authors: [{ name: "Dávid Szabó" }]
 };
@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
           <nav className="h-24 bg-gold flex items-center justify-center">
             <Link className="lg:text-center lg:relative" href="/">
               <h1 className="text-2xl md:text-2xl lg:text-4xl uppercase">
-                Alpavantage Search Tool
+                Alphavantage Search Tool
               </h1>
             </Link>
           </nav>
