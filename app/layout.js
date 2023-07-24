@@ -14,9 +14,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <header>
-          <nav className="h-24 bg-emerald-200 flex items-center justify-center">
+          <nav className="h-24 bg-gold flex items-center justify-center">
             <Link className="lg:text-center lg:relative" href="/">
-              <h1 className="md:text-2xl lg:text-4xl">
+              <h1 className="text-2xl md:text-2xl lg:text-4xl uppercase">
                 Alpavantage Search Tool
               </h1>
             </Link>
