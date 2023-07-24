@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import SearchBar from "./SearchBar";
 import StockList from "./StockList";
 
@@ -8,6 +8,10 @@ export default function SearchWrapper({ defaultData }) {
   const [query, setQuery] = useState("");
   const [searchData, setSearchData] = useState([]);
   const [noResults, setNoResults] = useState(false);
+
+  useEffect(() => {
+    if (!query) setNoResults(false);
+  }, [query]);
 
   return (
     <div className="flex flex-col items-center justify-between px-4 pb-8">
