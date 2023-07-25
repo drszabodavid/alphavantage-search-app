@@ -16,7 +16,7 @@ export default function Stock() {
     month = month < 10 ? `0${month + 1}` : month + 1;
     let year = objectDate.getFullYear();
     const today = `${year}-${month}-${day - 3}`;
-    setCurrentPrice(+stockData["Time Series (Daily)"][today]["1. open"]);
+    setCurrentPrice(+stockData["Time Series (Daily)"]["2023-07-24"]["1. open"]);
   };
 
   useEffect(() => {
@@ -42,7 +42,7 @@ export default function Stock() {
           </h3>
           <h4 className="self-start text-sm pb-4">{stockData.Industry}</h4>
           <p className="p-4 text-2xl font-bold">
-            Price: ${currentPrice.toFixed(2)}
+            Price: ${stockData["50DayMovingAverage"]}
           </p>
           <aside className="text-xs">
             <p className="text-justify">{stockData.Description}</p>
