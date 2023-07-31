@@ -2,7 +2,7 @@
 
 const nextConfig = {
   env: {
-    API_KEY: "ZYS1N4UKBG7Y2TCY"
+    API_KEY: "H2NER10SJCKNLJH0"
   }
 };
 
